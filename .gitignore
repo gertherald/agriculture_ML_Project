@@ -1,2 +1,2 @@
 venv
-data/calls.db
+src/data/calls.db
