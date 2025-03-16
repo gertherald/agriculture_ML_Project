@@ -1,41 +1,42 @@
 # Machine Learning Pipeline for Plant Data
 
 ## a. Full Name and Email Address
-Fullname: Gerald Chan Weiheng
+Fullname: Gerald Chan Weiheng  
 Email: geraldchanwh@gmail.com
 
 ## b. Overview of the Submitted Folder and Folder Structure
 This project implements a machine learning pipeline to process and analyze plant-related sensor data. The folder contains various scripts that handle different parts of the pipeline, including data ingestion and preprocessing, machine learning models, and model evaluations. The folder structure is as follows:
 ## Folder Structure
-.github
-src/
-│
-├── data/
-│   ├── calls.db
-│   └── temp.db
-├── application_test.py
-├── Classifier_Evaluation.py
-├── Data_Ingestion_And_Preprocessing.py
-├── Decision_Tree_Classifer_Label_PCA.py
-├── Decision_Tree_Classifer_Label_Raw.py
-├── Decision_Tree_Classifer_OneHot_PCA.py
-├── dropping_tables.py
-├── Gradient_Boosting_Regressor.py
-├── K_Nearest_Neighbours_Classifier_Label_PCA.py
-├── K_Nearest_Neighbours_Classifier_OneHot_PCA.py
-├── knn_classifier_model_trained.pkl
-├── Linear_Regression.py
-├── main.py
-├── pca_model.pkl
-├── Plant_PCA.py
-├── Random_Forest_Classifier_Label_PCA.py
-├── Random_Forest_Regressor.py
-├── random_forest_temperature_regressor_model_trained.pkl
-├── Regression_Evaluation.py
-└── scaler.pkl
-eda.ipynb
-README.md
-run.sh
+.github  
+src/  
+│  
+├── data/  
+│   ├── calls.db  
+│   └── temp.db  
+├── application_test.py  
+├── Classifier_Evaluation.py  
+├── Data_Ingestion_And_Preprocessing.py  
+├── Decision_Tree_Classifer_Label_PCA.py  
+├── Decision_Tree_Classifer_Label_Raw.py  
+├── Decision_Tree_Classifer_OneHot_PCA.py  
+├── dropping_tables.py  
+├── Gradient_Boosting_Regressor.py  
+├── K_Nearest_Neighbours_Classifier_Label_PCA.py  
+├── K_Nearest_Neighbours_Classifier_OneHot_PCA.py  
+├── knn_classifier_model_trained.pkl  
+├── Linear_Regression.py  
+├── main.py  
+├── pca_model.pkl  
+├── Plant_PCA.py  
+├── Random_Forest_Classifier_Label_PCA.py  
+├── Random_Forest_Regressor.py  
+├── random_forest_temperature_regressor_model_trained.pkl  
+├── Regression_Evaluation.py  
+└── scaler.pkl  
+eda.ipynb  
+README.md  
+requirements.txt  
+run.sh  
 
 ### Explanation:
 
