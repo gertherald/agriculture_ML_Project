@@ -1,41 +1,42 @@
 # Machine Learning Pipeline for Plant Data
 
 ## a. Full Name and Email Address
-Fullname: Gerald Chan Weiheng
+Fullname: Gerald Chan Weiheng  
 Email: geraldchanwh@gmail.com
 
 ## b. Overview of the Submitted Folder and Folder Structure
 This project implements a machine learning pipeline to process and analyze plant-related sensor data. The folder contains various scripts that handle different parts of the pipeline, including data ingestion and preprocessing, machine learning models, and model evaluations. The folder structure is as follows:
 ## Folder Structure
-.github
-src/
-│
-├── data/
-│   ├── calls.db
-│   └── temp.db
-├── application_test.py
-├── Classifier_Evaluation.py
-├── Data_Ingestion_And_Preprocessing.py
-├── Decision_Tree_Classifer_Label_PCA.py
-├── Decision_Tree_Classifer_Label_Raw.py
-├── Decision_Tree_Classifer_OneHot_PCA.py
-├── dropping_tables.py
-├── Gradient_Boosting_Regressor.py
-├── K_Nearest_Neighbours_Classifier_Label_PCA.py
-├── K_Nearest_Neighbours_Classifier_OneHot_PCA.py
-├── knn_classifier_model_trained.pkl
-├── Linear_Regression.py
-├── main.py
-├── pca_model.pkl
-├── Plant_PCA.py
-├── Random_Forest_Classifier_Label_PCA.py
-├── Random_Forest_Regressor.py
-├── random_forest_temperature_regressor_model_trained.pkl
-├── Regression_Evaluation.py
-└── scaler.pkl
-eda.ipynb
-README.md
-run.sh
+.github  
+src/  
+│  
+├── data/  
+│   ├── calls.db  
+│   └── temp.db  
+├── application_test.py  
+├── Classifier_Evaluation.py  
+├── Data_Ingestion_And_Preprocessing.py  
+├── Decision_Tree_Classifer_Label_PCA.py  
+├── Decision_Tree_Classifer_Label_Raw.py  
+├── Decision_Tree_Classifer_OneHot_PCA.py  
+├── dropping_tables.py  
+├── Gradient_Boosting_Regressor.py  
+├── K_Nearest_Neighbours_Classifier_Label_PCA.py  
+├── K_Nearest_Neighbours_Classifier_OneHot_PCA.py  
+├── knn_classifier_model_trained.pkl  
+├── Linear_Regression.py  
+├── main.py  
+├── pca_model.pkl  
+├── Plant_PCA.py  
+├── Random_Forest_Classifier_Label_PCA.py  
+├── Random_Forest_Regressor.py  
+├── random_forest_temperature_regressor_model_trained.pkl  
+├── Regression_Evaluation.py  
+└── scaler.pkl  
+eda.ipynb  
+README.md  
+requirements.txt  
+run.sh  
 
 ### Explanation:
 
@@ -56,29 +57,30 @@ temp.db will be holding the cleaned and processed data frame as well as evaluati
 4. Run the pipeline by executing the `run.sh` file:
 './run.sh'
 5. It should then run all of the python scripts in this order:
-	1.	Data Ingestion and Preprocessing
-	1.1.	Data_Ingestion_And_Preprocessing.py
-	1.2.	Plant_PCA.py
-	2.	Regressors
-	2.1.	Gradient_Boosting_Regressor.py
-	2.2.	Random_Forest_Regressor.py
-	2.3.	Linear_Regression.py
-	3.	Regression Evaluation
-	3.1.	Regression_Evaluation.py
-	4.	Classifiers with Label Encoding
-	4.1.	Decision_Tree_Classifier_Label_Raw.py (Raw Cleaned Data)
-	4.2.	Decision_Tree_Classifier_Label_PCA.py (PCA Cleaned Data)
-	4.3.	K_Nearest_Neighbours_Classifier_Label_PCA.py
-	4.4.	Random_Forest_Classifier_Label_PCA.py
-	5.	Classifiers with OneHot Encoding
-	5.1.	Random_Forest_Classifier_OneHot_PCA.py
-	5.2.	Decision_Tree_Classifier_OneHot_PCA.py
-	5.3.	K_Nearest_Neighbours_Classifier_OneHot_PCA.py
-    6.  Application of Models
-    6.1.    application_test.py
+	1.	Data Ingestion and Preprocessing  
+	1.1.	Data_Ingestion_And_Preprocessing.py  
+	1.2.	Plant_PCA.py  
+	2.	Regressors  
+	2.1.	Gradient_Boosting_Regressor.py  
+	2.2.	Random_Forest_Regressor.py  
+	2.3.	Linear_Regression.py  
+	3.	Regression Evaluation  
+	3.1.	Regression_Evaluation.py  
+	4.	Classifiers with Label Encoding  
+	4.1.	Decision_Tree_Classifier_Label_Raw.py (Raw Cleaned Data)  
+	4.2.	Decision_Tree_Classifier_Label_PCA.py (PCA Cleaned Data)  
+	4.3.	K_Nearest_Neighbours_Classifier_Label_PCA.py  
+	4.4.	Random_Forest_Classifier_Label_PCA.py  
+	5.	Classifiers with OneHot Encoding  
+	5.1.	Random_Forest_Classifier_OneHot_PCA.py  
+	5.2.	Decision_Tree_Classifier_OneHot_PCA.py  
+	5.3.	K_Nearest_Neighbours_Classifier_OneHot_PCA.py  
+	6.	Application of Models   
+	6.1.    application_test.py
+   
 This is the sequence in which the scripts are executed based on the run_script() function calls in the main.py script when executing run.sh. Each section (such as Regressors, Classifiers, etc.) is printed before the scripts are run.
-6. To modify any parameters, navigate to the specific Python script (e.g., `Data_Ingestion_And_Preprocessing.py`, `Gradient_Boosting_Regressor.py`), and adjust the parameters in the script as needed (e.g., learning rate, n_estimators).
-7. To clear the newly made databases, run dropping_tables.py manually to reset all cleaned tables and evaluation metrics. (cd to src folder first if it fails)
+7. To modify any parameters, navigate to the specific Python script (e.g., `Data_Ingestion_And_Preprocessing.py`, `Gradient_Boosting_Regressor.py`), and adjust the parameters in the script as needed (e.g., learning rate, n_estimators).
+8. To clear the newly made databases, run dropping_tables.py manually to reset all cleaned tables and evaluation metrics. (cd to src folder first if it fails)
 
 ## d. Description of Logical Steps/Flow of the Pipeline
 1. **Data Ingestion and Preprocessing**: The raw plant sensor data is loaded from the SQLite database, cleaned, and preprocessed.
@@ -219,8 +221,7 @@ Decision Tree Classifier: A tree-based algorithm that splits data based on featu
 - **KNN Classifier**: Works well with **Label Encoding** and **One-Hot Encoding** depending on the type of target variable. PCA can improve performance by improving data groupings, reducing feature dimensions and computational cost.
 - **Random Forest Classifier**: Handles both **Label Encoding** and **One-Hot Encoding** efficiently. PCA helps by removing redundant features and reducing overfitting.
 - **Decision Tree Classifier**: Handles both encodings well, but **Label Encoding** works best for ordinal targets. PCA helps improve decision-making by reducing feature complexity and overfitting.
-
-Using **PCA** in classification tasks helps reduce the number of features, decrease overfitting, and improve the model's performance by retaining only the most significant features.
+- Using **PCA** in classification tasks helps reduce the number of features, decrease overfitting, and improve the model's performance by retaining only the most significant features.
 ---
 
 ## h. Evaluation of the Models Developed
