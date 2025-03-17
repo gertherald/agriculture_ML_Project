@@ -40,12 +40,12 @@ run.sh
 
 ### Explanation:
 
-- The **`src/`** folder contains all the main Python scripts required to run your machine learning pipeline.
+- The **`src/`** folder contains all the main Python scripts required to run the machine learning pipeline.
 - The **`data/`** folder can store any input data files to be fetched.
-- **`eda.ipynb`** is your Jupyter notebook for exploratory data analysis.
-- **`README.md`** is the file you're creating to describe the project and its structure.
+- **`eda.ipynb`** is the Jupyter notebook for exploratory data analysis.
+- **`README.md`** is the file you're reading to describe the project and its structure.
 - **`requirements.txt`** includes all the dependencies needed to run the programme.
-- **`run.sh`** is your script to automate the execution of different stages of the pipeline.
+- **`run.sh`** is the script to automate the execution of main.py, which executes all the scripts in sequence to run the MLP.
 
 ## c. Instructions for Executing the Pipeline and Modifying Parameters
 1. Clone the repository to your local machine.
