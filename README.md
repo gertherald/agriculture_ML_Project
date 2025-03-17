@@ -49,14 +49,16 @@ run.sh
 
 ## c. Instructions for Executing the Pipeline and Modifying Parameters
 1. Clone the repository to your local machine.
-2. Ensure you have the required Python dependencies. You can install them using the following command:
+2. Make a virtual environment if you have not done so with 'python3 -m venv <venv_name>'
+3. Activate your virtual environment using 'myenv\Scripts\activate' for windows, or 'source myenv/bin/activate' for macOS/ Linux
+4. Ensure you have the required Python dependencies. You can install them using the following command:
 'pip install -r requirements.txt'
-3. Move the calls.db (agri.db) database into the data folder in src folder (src/data), with temp.db. 
+5. Move the calls.db (agri.db) database into the data folder in src folder (src/data), with temp.db. 
 farm_data will be fetched from calls.db, then cleaned and processed and saved into temp.db.
 temp.db will be holding the cleaned and processed data frame as well as evaluation metrics for all models used so please do not remove it.
-4. Run the pipeline by executing the `run.sh` file:
+6. Run the pipeline by executing the `run.sh` file in bash:
 './run.sh'
-5. It should then run all of the python scripts in this order:
+7. It should then run all of the python scripts in this order:
 	1.	Data Ingestion and Preprocessing  
 	1.1.	Data_Ingestion_And_Preprocessing.py  
 	1.2.	Plant_PCA.py  
