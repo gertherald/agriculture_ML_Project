@@ -80,8 +80,8 @@ temp.db will be holding the cleaned and processed data frame as well as evaluati
 	6.	Application of Models   
 	6.1.    application_test.py
    
-This is the sequence in which the scripts are executed based on the run_script() function calls in the main.py script when executing run.sh. Each section (such as Regressors, Classifiers, etc.) is printed before the scripts are run.
-7. To modify any parameters, navigate to the specific Python script (e.g., `Data_Ingestion_And_Preprocessing.py`, `Gradient_Boosting_Regressor.py`), and adjust the parameters in the script as needed (e.g., learning rate, n_estimators).
+This is the sequence in which the scripts are executed based on the run_script() function calls in the main.py script when executing run.sh. Each section (such as Regressors, Classifiers, etc.) is printed before the scripts are run.  
+7. To modify any parameters, navigate to the specific Python script (e.g., `Data_Ingestion_And_Preprocessing.py`, `Gradient_Boosting_Regressor.py`), and adjust the parameters in the script as needed (e.g., learning rate, n_estimators).  
 8. To clear the newly made databases, run dropping_tables.py manually to reset all cleaned tables and evaluation metrics. (cd to src folder first if it fails)
 
 ## d. Description of Logical Steps/Flow of the Pipeline
