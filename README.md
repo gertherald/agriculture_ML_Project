@@ -50,7 +50,7 @@ run.sh
 ## c. Instructions for Executing the Pipeline and Modifying Parameters
 1. Clone the repository to your local machine.
 2. Make a virtual environment if you have not done so with 'python3 -m venv <venv_name>'
-3. Activate your virtual environment using 'myenv\Scripts\activate' for windows, or 'source myenv/bin/activate' for macOS/ Linux
+3. Activate your virtual environment using '<venv_name>\Scripts\activate' for windows, or 'source <venv_name>/bin/activate' for macOS/ Linux
 4. Ensure you have the required Python dependencies. You can install them using the following command:
 'pip install -r requirements.txt'
 5. Move the calls.db (agri.db) database into the data folder in src folder (src/data), with temp.db. 
