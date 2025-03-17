@@ -10,4 +10,4 @@ target_dir="$current_dir/src"
 cd "$target_dir" || { echo "Directory not found!"; exit 1; }
 
 # Run the main.py script located in the 'src' folder
-python3 main.py
+python main.py

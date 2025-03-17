@@ -5,7 +5,7 @@ def run_script(script_name):
     """Function to run a Python script."""
     script_path = os.path.join(os.getcwd(), script_name)
     try:
-        result = subprocess.run(['python3', script_path], check=True, capture_output=True, text=True)
+        result = subprocess.run(['python', script_path], check=True, capture_output=True, text=True)
         print(f"Successfully ran {script_name}")
         print(result.stdout)
     except subprocess.CalledProcessError as e:

@@ -309,7 +309,7 @@ The **KNeighborsClassifierLabel** yielded the highest accuracy and speed, outper
 
 In summary, label encoding appears to have provided a more efficient feature space for these classification models, leading to better performance than one-hot encoding, particularly for **KNeighborsClassifier**. However, **RandomForestClassifier** and **DecisionTreeClassifier** struggled with one-hot encoding due to the high dimensionality of the dataset, highlighting that these models may not perform well when dealing with a large number of features created by one-hot encoding.
 
-Thus, the 2 most suitable models for predicting Plant Type-Stage are in order: **KNeighborsClassifier Label/Onehot Encodded** and **DecisionTreeClassifier Label Encodded**.
+Thus, the 2 most suitable models for predicting Plant Type-Stage are in order: **KNeighborsClassifier Label Encodded** and **DecisionTreeClassifier Label Encodded**.
 
 ### Application Test
 
